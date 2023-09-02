@@ -29,7 +29,7 @@ set(CMAKE_BUILD_TYPE "Release")
 # -O3 is full optimization in gcc/g++
 #set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3")
 # -O0 is no optimization in gcc/g++
-#set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O0")
+set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O0")
 
 
 #

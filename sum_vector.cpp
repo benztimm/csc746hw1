@@ -5,20 +5,27 @@
 #include <random>
 #include <vector>
 #include <string.h>
+using namespace std;
 
-
-
-void 
-setup(int64_t N, uint64_t A[])
+void setup(int64_t N, uint64_t A[])
 {
-   printf(" inside sum_vector problem_setup, N=%lld \n", N);
+   printf(" inside sum_vector problem_setup, N=%ld \n", N);
+   for (int64_t i = 0; i < N; i++)
+   {
+      A[i] = i;
+   }
 }
 
 int64_t
 sum(int64_t N, uint64_t A[])
 {
-   printf(" inside sum_vector perform_sum, N=%lld \n", N);
+   printf(" inside sum_vector perform_sum, N=%ld \n", N);
 
-   return 0;
+   int64_t sum = 0;
+   for (int i = 0; i < N; i++)
+   {
+      sum += A[i];
+   }
+   return sum;
 }
 
