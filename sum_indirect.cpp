@@ -16,7 +16,7 @@ setup(int64_t N, uint64_t A[])
    srand(seed);
    for (int64_t i = 0; i < N; i++)
    {
-      int64_t random = (int64_t)(rand() % 10);
+      int64_t random = (int64_t)(rand() % N);
       A[i] = random;
    }
 }
