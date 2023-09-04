@@ -29,8 +29,8 @@ sum(int64_t N, uint64_t A[])
    int64_t index = 0;
    for(int64_t i = 0; i < N; i++)
    {
-      index = A[i];
       indirectsum += A[index];
+      index = A[index];
    }
    return indirectsum;
 }
